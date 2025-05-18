@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f3f5;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+}
+
+.card-header {
+    background-color: #343a40;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.card-body {
+    font-size: 0.95rem;
+    padding: 1.5rem;
+}
+
+.auth-page {
+    margin-top: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.15);
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+#search-page h2,
+#lists-page h2 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+#search-pattern,
+#list-name,
+#new-list-name {
+    font-size: 0.95rem;
+    padding: 0.55rem 0.75rem;
+}
+
+.response-code-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.response-code-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.response-code-card img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.list-card {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.list-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.list-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-card .badge {
+    font-size: 0.8rem;
+}
+
+#list-details {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.toast-container {
+    z-index: 1055;
+}
+
+.toast {
+    font-size: 0.95rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.toast-header {
+    font-weight: 600;
+    color: #212529;
+}
+
+/* Toast positioning */
+#toastContainer {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2000;
+}
+
+.toast.show {
+    display: block;
+}
+
+.toast.hide {
+    display: none;
+}
