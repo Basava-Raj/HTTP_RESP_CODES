@@ -7,5 +7,4 @@ public class FilterRequest {
 
     private String pattern;
 
-
 }

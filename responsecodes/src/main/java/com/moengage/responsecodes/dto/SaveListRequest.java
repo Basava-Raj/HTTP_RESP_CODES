@@ -9,6 +9,4 @@ public class SaveListRequest {
     private String listName;
     private List<String> responseCodes;
 
-
-
 }

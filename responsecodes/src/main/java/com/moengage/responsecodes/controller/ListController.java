@@ -81,7 +81,7 @@ public class ListController {
         return ResponseEntity.status(404).body("List not found");
     }
 
-    // 6. Edit a list’s name (optional enhancement)
+    // 6. Edit a list's name
     @PutMapping("/{listId}")
     public ResponseEntity<?> updateListName(@PathVariable Long listId, @RequestParam String newName, Principal principal) {
         Optional<ResponseList> listOpt = listRepo.findById(listId);
